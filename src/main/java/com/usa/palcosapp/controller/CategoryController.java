@@ -13,7 +13,7 @@ import java.util.Optional;
 @RequestMapping("/api/Category")
 @CrossOrigin(origins = "*",methods = {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
 
-public class CategoryControler {
+public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
@@ -22,7 +22,7 @@ public class CategoryControler {
         return categoryService.getAll();
     }
     @GetMapping("/{idCategory}")
-    public Optional<Category> getById(@PathVariable("igCategory") Integer id){
+    public Optional<Category> getById(@PathVariable("idCategory") Integer id){
         return categoryService.getById(id);
     }
     @PostMapping("/save")

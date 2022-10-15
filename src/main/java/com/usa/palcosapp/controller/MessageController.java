@@ -39,7 +39,4 @@ public class MessageController {
     public boolean delete(@PathVariable("idMessage") Integer id){
         return messageService.delete(id);
     }
-
-
-
 }
