@@ -14,13 +14,14 @@ import java.util.List;
 @Getter
 @Setter
 public class Box {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private String location;
+    private String  name;
+    private String  location;
     private Integer capacity;
-    private String description;
+    private String  description;
 
     @ManyToOne
     @JoinColumn(name = "idCategory")

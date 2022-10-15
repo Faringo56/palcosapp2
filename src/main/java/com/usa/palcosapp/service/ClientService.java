@@ -23,7 +23,7 @@ public class ClientService {
     }
 
     public Client save(Client client) {
-        if (client.getIdClient() == null) {
+        if (client.getIdClient()  == null) {
             return clientRepository.save(client);
         } else {
             Optional<Client> optional = clientRepository.getById(client.getIdClient());
@@ -42,7 +42,7 @@ public class ClientService {
                 if (client.getName() != null) {
                     optional.get().setName(client.getName());
                 }
-                if (client.getEmail() != null) {
+                if (client.getEmail()!= null) {
                     optional.get().setEmail(client.getEmail());
                 }
                 if (client.getPassword() != null) {

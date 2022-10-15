@@ -15,6 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Reservation {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idReservation;

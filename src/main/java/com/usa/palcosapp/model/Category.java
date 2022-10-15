@@ -14,6 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Category {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -23,6 +24,4 @@ public class Category {
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "category")
     @JsonIgnoreProperties("category")
     private List<Box> boxes;
-
-
 }
