@@ -16,8 +16,8 @@ public class MessageService {
     public List<Message> getAll(){
         return messageRepository.getAll();
     }
-    public Optional<Message> getById(Integer id){
-        return messageRepository.getById(id);
+    public Optional<Message> getById(Integer idMessage){
+        return messageRepository.getById(idMessage);
     }
     public Message save (Message message){
         if (message.getIdMessage()==null){

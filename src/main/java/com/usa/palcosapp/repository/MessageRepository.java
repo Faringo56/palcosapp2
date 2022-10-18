@@ -16,8 +16,8 @@ public class MessageRepository {
     public List<Message> getAll(){
         return (List<Message>) messageCrudRepository.findAll();
     }
-    public Optional<Message> getById(Integer id){
-        return messageCrudRepository.findById(id);
+    public Optional<Message> getById(Integer idMessage){
+        return messageCrudRepository.findById(idMessage);
     }
     public Message save(Message message){
         return messageCrudRepository.save(message);
