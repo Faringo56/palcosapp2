@@ -41,7 +41,7 @@ public class ReservationController {
     public boolean delete(@PathVariable("id") Integer id){
         return reservationService.delete(id);
     }
-    @GetMapping("/reposrt_status")
+    @GetMapping("/report_status")
     public ReservationReport getReservationStatusReport(){
         return reservationService.getReservationStatusReport();
     }
